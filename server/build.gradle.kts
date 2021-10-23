@@ -21,14 +21,17 @@ dependencies {
 //    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-aop")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa") // <-- 추가됨
+    implementation("org.springframework.boot:spring-boot-starter-jdbc")     // <-- 추가됨
+
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+
+    implementation("org.mariadb.jdbc:mariadb-java-client")
+
     // implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.0")
-//    runtimeOnly("mysql:mysql-connector-java")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
-    // https://mvnrepository.com/artifact/com.h2database/h2
-    testImplementation("com.h2database:h2:1.3.148")
 
 }
 
